@@ -48,7 +48,7 @@ public class McpConfig {
                 .args("-y", "@modelcontextprotocol/server-filesystem", "D:\\soft\\node-v18.17.1-win-x64\\工作日志")
                 .build();
         var mcpClient = McpClient.using(new StdioClientTransport(stdioParams))
-                .requestTimeout(Duration.ofSeconds(10)).sync();
+                .requestTimeout(Duration.ofSeconds(100)).sync();
         var init = mcpClient.initialize();
 
         System.out.println("mcpFileSysClient loading init=" + init);
