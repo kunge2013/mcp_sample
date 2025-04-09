@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author jianzhang
@@ -62,5 +63,9 @@ public class ChatController {
                 .advisors(messageChatMemoryAdvisor).stream().content();
     }
 
+    @GetMapping("/test")
+    public Map<String, String> test() {
 
+        return Map.of("test", "ok");
+    }
 }

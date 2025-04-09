@@ -23,6 +23,6 @@ public class McpClientCfg implements McpSyncClientCustomizer {
     @Override
     public void customize(String name, McpClient.SyncSpec spec) {
         // do nothing
-        spec.requestTimeout(Duration.ofSeconds(30));
+        spec.requestTimeout(Duration.ofSeconds(60));
     }
 }

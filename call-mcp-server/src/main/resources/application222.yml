@@ -6,12 +6,11 @@ spring:
       client:
         enabled: true
         name: call-mcp-server
-        #        stdio:
-        #          servers-configuration: classpath:mcp-server.json
+                stdio:
+                  servers-configuration: classpath:mcp-server.json
         sse:
           connections:
             server1:
               url: http://127.0.0.1:8080
     dashscope:
-#      api-key: {阿里云千问apiKey}
-      api-key: 1111
+      api-key: sk-0190e2d62fa949b2b837f374208f402e

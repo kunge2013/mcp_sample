@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "VGQzXQ5MhHEtTWIJ9jds8": {
+      "name": "天气查询",
+      "type": "stdio",
+      "description": "天气查询",
+      "isActive": true,
+      "command": "java",
+      "args": [
+        "-Dspring.ai.mcp.server.stdio=true",
+        "-jar",
+        "D:\\github.io\\mcp_sample\\mcp_weather_server\\target\\mcp-weather-server-0.0.1-SNAPSHOT.jar"
+      ],
+      "disabledTools": []
+    }
+  }
+}
